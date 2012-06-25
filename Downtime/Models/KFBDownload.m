@@ -74,7 +74,7 @@
 {
     NSLog(@"Download of %@ completed successfully.", [[download request] URL]);
     
-    // TODO: update delegate
+    [delegate download:self didAdvanceToProgressPercent:100.0f];
     
     [download release];
 }
