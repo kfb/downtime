@@ -19,7 +19,7 @@ static KFBDownloads *sharedDownloadsInstance;
 {
     if (sharedDownloadsInstance == nil)
     {
-        sharedDownloadsInstance = [[KFBDownloads alloc] init];
+        sharedDownloadsInstance = [[[KFBDownloads alloc] init] autorelease];
     }
 }
 
